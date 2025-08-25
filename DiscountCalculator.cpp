@@ -39,10 +39,13 @@ void Discount :: calculateDiscount(){
     
     discount = (realPrice/100)*rate;
     
-    cout << "\Final price after discount: "  << fixed << setprecision(2) << realPrice-discount << endl;
+    cout << "Product: " << product<< endl;
+    cout << "\nFinal price after discount: "  << fixed << setprecision(2) << realPrice-discount << endl;
     cout << "You can Save upto " << fixed << setprecision(2) << discount << endl;
+    
     cout << "\nPress any key to continue  ";
-    getch();
+    cin.ignore();
+    cin.get();
 }
 
 void Discount :: calculateRate(){
@@ -55,14 +58,18 @@ void Discount :: calculateRate(){
     cin >> amt;
     
     discount = realPrice - amt;
+
     if(!isValid())
     return;
     
     rate = 100/(realPrice/discount);
     
-    cout << "The discount rate is " << fixed << setprecision(2) << rate << "%" << endl;
+    cout << "Product: " << product<< endl;
+    cout << "\nThe discount rate is " << fixed << setprecision(2) << rate << "%" << endl;
+    
     cout << "\nPress any key to continue  ";
-    getch();
+    cin.ignore();
+    cin.get();
 }    
 
 void Discount :: compare() {
@@ -93,6 +100,10 @@ void Discount :: compare() {
         cout << left << setw(6) << fixed << setprecision(2) << prod[i].rate;
         cout << left << setw(10) << fixed << setprecision(2) << prod[i].discount << endl;
     }
+    
+    cout << "\nPress any key to continue  ";
+    cin.ignore();
+    cin.get();
 }
 
 int main(){
