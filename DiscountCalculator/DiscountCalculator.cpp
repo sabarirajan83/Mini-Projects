@@ -110,7 +110,7 @@ int main(){
     cout << "-----DISCOUNT CALCULATOR-----\n" << endl;
     
     int c;
-    Discount pdt1,pdt2;
+    Discount pdt1;
     
     do{
         cout << "Enter the following number to\n1.Calculate discounted price\n2.Calculate dicount rate\n3.Compare discounts\n4.Exit\nChoice: ";
