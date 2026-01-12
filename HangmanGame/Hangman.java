@@ -47,7 +47,7 @@ class Hangman {
                     }
                 }
                 if(String.valueOf(displayWord).equals(word)) {
-                    System.out.println("Congratulations! You've guessed the word: " + word);
+                    System.out.println("Congratulations! You've guessed the word: " + word +"\n");
                     totalWins++;
                     return;
                 }
