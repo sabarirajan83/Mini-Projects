@@ -21,8 +21,15 @@ public class Main{
 
         do{
             System.out.print("Enter the following numbers for\n1. New Game\n2. Stats\n3. Exit\nYour choice: ");
-            c = sc.nextInt();
-            sc.nextLine();
+            try {
+                c = sc.nextInt();
+                sc.nextLine();
+            } 
+            catch (InputMismatchException e) {
+                System.out.println("\nInvalid input! Please enter numbers only.\n");
+                sc.nextLine();
+                continue;
+            }
 
             switch(c){
                 case 1:

@@ -65,6 +65,6 @@ class Hangman {
         System.out.println("Showing game statistics...");
         System.out.println("Total Games Played: " + totalGames);
         System.out.println("Total Wins: " + totalWins);
-        System.out.printf("Win Rate: %.2f%%\n", (float)totalWins / totalGames * 100 + "\n");
+        System.out.printf("Win Rate: %.2f%%\n\n", (float)totalWins / totalGames * 100);
     }
 }
